@@ -19,6 +19,7 @@ def query_repo(directory_path: str):
         if str(query).upper() == "EXIT":
             print("Exiting...")
             exit = True
+            sys.exit(1)
 
         response = bot.query(query)
         print(response["result"])

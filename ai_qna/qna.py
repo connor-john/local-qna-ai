@@ -13,7 +13,7 @@ class AskBot:
 
     def __init__(self, file_path: str) -> None:
         self.file_path = file_path
-        self.loader = TextLoader(self.file_path)
+        self.loader = TextLoader(self.file_path, encoding="UTF-8")
         self.documents = self.loader.load()
         self.texts = self.split_text(self.documents)
         self.vectordb = Chroma.from_documents(
