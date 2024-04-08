@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "ai-coder"
+name = "ai-qna"
 version = "0.1.0"
 description = ""
 authors = ["Connor (Cub) <connor@cubdigital.co.nz>"]
